@@ -1,0 +1,319 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #000000;
+    box-sizing: border-box;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    height: 50px;
+}
+
+.buscador {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 50%;
+}
+
+.buscador input {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.buscador button {
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffbc0e;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.buscador button:hover {
+    background-color: #dc2626;
+    color: white;
+}
+
+/* Navegación */
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+}
+
+li {
+    margin: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Footer */
+
+footer {
+    background-color: #FFE4C4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+footer section {
+    margin: 0;
+    text-align: left;
+}
+
+footer h2,
+footer h3 {
+    font-size: 16px;
+    margin: 0 0 4px 0;
+    color: #000;
+}
+
+footer p {
+    color: #000;
+    font-size: 13px;
+    margin: 0;
+    text-align: left;
+}
+
+footer a {
+    color: #000000;
+    text-decoration: none;
+    margin-right: 10px;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Main */
+
+main {
+    background-color: orange;
+    min-height: 50vh;
+}
+
+.monitores {
+    text-align: center;
+    color: #FF0000;
+    font-size: 40px;
+}
+
+.accesorios {
+    text-align: center;
+    color: #FF0000;
+    font-size: 40px;
+}
+
+p {
+    text-align: center;
+    color: #0000FF;
+    font-size: 18px;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.logos img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Página de consultas */
+
+table {
+    width: 80%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+caption {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #0F172A;
+}
+
+th {
+    background-color: #0F172A;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+    background-color: #f1f5f9;
+}
+
+/* Productos */
+
+.titulo_productos {
+    text-align: center;
+    color: #FF0000;
+    font-size: 40px;
+}
+
+/* Notebooks */
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 30px 50px;
+    background-color: #f5f5f5;
+}
+
+.producto {
+    position: relative;
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    min-width: 0;
+    min-height: 390px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.producto img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.stock {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #45b649;
+    color: white;
+    font-size: 10px;
+    padding: 5px 7px;
+    border-radius: 4px;
+}
+
+.producto h2 {
+    color: #164b7a;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.envio {
+    width: 90%;
+    margin: 10px auto 0;
+    padding: 8px;
+    background-color: #45b649;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.producto .precio {
+    color: #111;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+/* Quiénes somos */
+
+.quienes_somos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 60px 80px;
+    background-color: #f5f5f5;
+}
+
+.texto_nosotros {
+    width: 50%;
+}
+
+.texto_nosotros h1 {
+    color: #ff0000;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.texto_nosotros p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: left;
+}
+
+.imagen_nosotros {
+    width: 45%;
+}
+
+.imagen_nosotros img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
